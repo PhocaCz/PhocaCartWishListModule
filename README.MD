@@ -1,0 +1,1 @@
+Phoca Cart Wish List Module is Joomla! CMS extension. Module which displays wish list of products.

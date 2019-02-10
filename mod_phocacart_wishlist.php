@@ -14,25 +14,32 @@ if (!JComponentHelper::isEnabled('com_phocacart', true)) {
 	$app->enqueueMessage(JText::_('Phoca Cart Error'), JText::_('Phoca Cart is not installed on your system'), 'error');
 	return;
 }
-if (! class_exists('PhocaCartLoader')) {
+
+
+JLoader::registerPrefix('Phocacart', JPATH_ADMINISTRATOR . '/components/com_phocacart/libraries/phocacart');
+
+/*
+if (! class_exists('PhocacartLoader')) {
     require_once( JPATH_ADMINISTRATOR.'/components/com_phocacart/libraries/loader.php');
 }
+
 phocacartimport('phocacart.path.route');
 phocacartimport('phocacart.render.renderjs');
 phocacartimport('phocacart.wishlist.wishlist');
-phocacartimport('phocacart.category.categorymultiple');
+phocacartimport('phocacart.category.categorymultiple');*/
+
+
 $lang = JFactory::getLanguage();
 //$lang->load('com_phocacart.sys');
 $lang->load('com_phocacart');
 
+$p['module_description']			= $params->get( 'module_description', '' );
+$moduleclass_sfx 					= htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
+
 JHTML::stylesheet('media/com_phocacart/css/main.css' );
 
-PhocaCartRenderJs::renderAjaxRemoveFromWishList();
+PhocacartRenderJs::renderAjaxRemoveFromWishList();
 
-$wishlist	= new PhocaCartWishList();
-echo '<div id="phItemWishListBox">';
-echo $wishlist->renderList();
-echo '</div>';
-echo '<div id="phContainerModuleWishList"></div>';
+$wishlist	= new PhocacartWishlist();
 require(JModuleHelper::getLayoutPath('mod_phocacart_wishlist'));
 ?>

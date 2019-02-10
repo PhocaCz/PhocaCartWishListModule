@@ -1,0 +1,19 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaCartWishListModule",
+	"extensionName": "Phoca Cart Wish List Module",
+	"projectInitials" : "PC",				  
+	"description": "Phoca Cart Wish List Module - a Joomla! CMS module which displays Phoca Cart wish list in module position.",
+	"projectUrl": "https://www.phoca.cz/phoca-cart-wish-list-module",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/category/129-phoca-cart-wish-list-module",
+	"projectMainComponent": "Phoca Cart",
+	"projectMainComponentInfoUrl": "https://www.phoca.cz/project/phocacart-joomla-ecommerce",
+	"projectDemo" : {
+		"Joomla! - Phoca Cart Demo": "https://www.phoca.cz/phocacartdemo/",
+		"Joomla! - Phoca Cart - Phoca Premiere Template Demo": "https://www.phoca.cz/phocacartdemo/premiere/"
+	},
+	"projectColor": "#129ed9"
+}

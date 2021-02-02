@@ -33,5 +33,5 @@ $moduleclass_sfx 					= htmlspecialchars($params->get('moduleclass_sfx'), ENT_CO
 PhocacartRenderJs::renderAjaxRemoveFromWishList();
 $wishlist	= new PhocacartWishlist();
 
-require(JModuleHelper::getLayoutPath('mod_phocacart_wishlist'));
+require(JModuleHelper::getLayoutPath('mod_phocacart_wishlist', $params->get('layout', 'default')));
 ?>

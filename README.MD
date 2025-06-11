@@ -64,7 +64,7 @@ Phoca Cart Wish List Module - a Joomla! CMS module which displays Phoca Cart wis
 
 ## Version (Joomla! 5.x)
 
-5.0.0Beta
+5.1.1
 
 
 

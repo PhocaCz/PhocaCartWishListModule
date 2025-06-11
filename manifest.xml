@@ -39,4 +39,24 @@
 		<targetplatform name="joomla" version="4\.*"/>
 		<client>site</client>
 	</update>
+	<update>
+		<name><![CDATA[ Phoca Cart Wish List Module ]]></name>
+		<description><![CDATA[ Phoca Cart Wish List Module - a Joomla! CMS module which displays Phoca Cart wish list in module position. ]]></description>
+		<element>mod_phocacart_wishlist</element>
+		<type>module</type>
+		<version>5.1.1</version>
+		<infourl title="Phoca Cart Wish List Module 5.1.1">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaCartWishListModule/releases/download/5.1.1/mod_phocacart_wishlist_v5.1.1.zip</downloadurl>
+		</downloads>
+		<sha512>e8a7b998c5d8f8a41414e178363464b2e0e21c25d3a5acf15ff6eda17232c94a1cf246246d5f7544308aad68d346e8cf5b45ebd626f1c5b50a257d55a2ddc5a9</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="5\.*"/>
+		<client>site</client>
+	</update>
 </updates>
